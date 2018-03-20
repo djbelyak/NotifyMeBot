@@ -10,5 +10,8 @@ setup(
     author_email='djbelyak@gmail.com',
     license='MIT',
     packages=['notifyme'],
+    entry_pints={
+        'notifyme': ['notifyme:main']
+    },
     zip_safe=True
 )
