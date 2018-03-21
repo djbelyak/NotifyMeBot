@@ -12,5 +12,22 @@ setup(
     packages=['notifyme'],
     entry_points={
         'console_scripts': ['notifyme = notifyme.__main__:main']
-    }
+    },
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3.6',
+        'Environment :: Console',
+        'Intended Audience :: Developers',
+        'Intended Audience :: System Administrators',
+        'License :: OSI Approved :: MIT License',
+        'Topic :: Communications :: Chat',
+        'Topic :: System :: Logging',
+        'Topic :: System :: Monitoring',
+        'Topic :: Software Development',
+        'Topic :: System :: Networking',
+        'Topic :: Terminals',
+        'Topic :: Text Processing',
+        'Topic :: Utilities'
+    ]
 )
