@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(
-    name='notifymebot',
+    name='notifyme',
     version='0.1',
     description='Command launcher with status notifications via Telegram',
     url='https://github.com/djbelyak/NotifyMeBot',
@@ -10,8 +10,7 @@ setup(
     author_email='djbelyak@gmail.com',
     license='MIT',
     packages=['notifyme'],
-    entry_pints={
-        'notifyme': ['notifyme:main']
-    },
-    zip_safe=True
+    entry_points={
+        'console_scripts': ['notifyme = notifyme.__main__:main']
+    }
 )
