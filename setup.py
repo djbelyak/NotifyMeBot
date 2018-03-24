@@ -1,10 +1,12 @@
 from setuptools import setup
 
+import notifyme
+
 
 setup(
     name='notifyme',
     version='0.1',
-    description='Command launcher with status notifications via Telegram',
+    description=notifyme.__doc__.strip(),
     url='https://github.com/djbelyak/NotifyMeBot',
     author='Ivan Belyavtsev',
     author_email='djbelyak@gmail.com',

@@ -102,3 +102,9 @@ ENV/
 
 # vscode
 .vscode/
+
+# test coverage
+cover/
+
+# nosetest
+.noseids
