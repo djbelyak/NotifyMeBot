@@ -9,7 +9,7 @@ def parse_args(args):
     )
     parser.add_argument(
         'command',
-        nargs='+',
+        nargs=argparse.REMAINDER,
         help='command which will be execute'
     )
     return parser.parse_args(args)

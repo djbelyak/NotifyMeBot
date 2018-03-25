@@ -9,3 +9,8 @@ class TestParseArgs(unittest.TestCase):
         argv = ['python']
         args = parse_args(argv)
         self.assertEqual(args.command, argv)
+
+    def test_two_words_command(self):
+        argv = ['python', '--version']
+        args = parse_args(argv)
+        self.assertEqual(args.command, argv)
