@@ -13,5 +13,5 @@ pip intsll .
 ## Usage
 
 ```powershell
-notifyme --token <Telegram API token> --user <Telegram user> <command>
+notifyme --token <Telegram API token> --user_id <Telegram user id> <command>
 ```
