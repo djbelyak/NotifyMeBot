@@ -7,7 +7,7 @@ from notifyme.app import App
 
 def main():
     args = parse_args(sys.argv[1:])
-    app = App(args.command)
+    app = App(args.command, args.token, args.user_id)
     app.run()
 
 
