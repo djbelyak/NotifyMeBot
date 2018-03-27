@@ -3,11 +3,16 @@
 import sys
 from notifyme.cli import parse_args
 from notifyme.app import App
+from notifyme.notificator import Notificator
 
 
 def main():
     args = parse_args(sys.argv[1:])
-    app = App(args.command, args.token, args.user_id)
+    notificator = Notificator(
+        token=args.token,
+        chat_id=args.user_id
+    )
+    app = App(args.command, notificator)
     app.run()
 
 
